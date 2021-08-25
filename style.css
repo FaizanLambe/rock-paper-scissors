@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+        134.34% 134.34% at 50% 0%,
+        #1f3757 0%,
+        #131537 100%
+    );
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 700px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 18px;
+}
+
+.title img{
+    margin-left: 30px;
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background: white;
+    height: 115px;
+    width: 185px;
+    border-radius: 8px;
+    letter-spacing: 4px;
+}
+
+.points h1{
+    font-size: 60px;
+}
+
+.points p{
+    font-size: 13px;
+}
+
+.gestures{
+    background-image: url("assets/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 450px;
+    height: 417px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.gestures img{
+    width: 170px;
+}
+
+.paper{
+    margin-right: 40px;
+}
+
+.scissors{
+    margin-left: 40px;
+}
+
+.gestures .gesture{
+    transition: all 0.25s;
+}
+
+.gestures .gesture:hover{
+    cursor: pointer;
+    transform: translate3d(0px, -8px, 0px);
+}
+
+.results{
+    width: 900px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.results h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.referee{
+    text-align: center;
+}
+
+.referee h1{
+    font-size: 45px;
+}
+
+.newGame{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 9px;
+    transition: all 0.15s;
+}
+
+.newGame:hover{
+    background-color: #a9cdfc;
+    transform: translate3d(0px, -2px, 0px);
+}
